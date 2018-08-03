@@ -23,6 +23,17 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+	<profiles>
+	    <profile>
+	       <id>sonar</id>
+	  	    <properties>
+			<!-- Optional URL to server. Default value is http://localhost:9000 -->
+			   <sonar.host.url>
+				http://http://ec2-18-219-181-146.us-east-2.compute.amazonaws.com:9000
+			   </sonar.host.url>
+	            </properties>
+             </profile>
+       </profiles>
 
 	<dependencies>
 		<dependency>
